@@ -1,0 +1,5299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>AllRegions.kml</name>
+	<open>1</open>
+	<Schema name="NVI_Basin_Region_schema" id="NVI_Basin_Region_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id"><displayName>Id</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="NVI_Shelf_Slope_Region_schema" id="NVI_Shelf_Slope_Region_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id"><displayName>Id</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="XYPoint_Region_C_Buffer1_schema" id="XYPoint_Region_C_Buffer1_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Lat"><displayName>Lat</displayName>
+</SimpleField>
+		<SimpleField type="double" name="lon"><displayName>lon</displayName>
+</SimpleField>
+		<SimpleField type="double" name="rad"><displayName>rad</displayName>
+</SimpleField>
+		<SimpleField type="double" name="BUFF_DIST"><displayName>BUFF_DIST</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="SVI_Basin_Region_schema" id="SVI_Basin_Region_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id"><displayName>Id</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="JuanDeFuca_Region_Coarse_schema" id="JuanDeFuca_Region_Coarse_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="FID_1"><displayName>FID_1</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id"><displayName>Id</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ET_ID"><displayName>ET_ID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="FID_2"><displayName>FID_2</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id_1"><displayName>Id_1</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ET_ID_1"><displayName>ET_ID_1</displayName>
+</SimpleField>
+		<SimpleField type="double" name="ET_X"><displayName>ET_X</displayName>
+</SimpleField>
+		<SimpleField type="double" name="ET_Y"><displayName>ET_Y</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Distance"><displayName>Distance</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="Queen_Charlotte_Strait_Coarse_schema" id="Queen_Charlotte_Strait_Coarse_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id"><displayName>Id</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="Hecate_Strait_Region_schema" id="Hecate_Strait_Region_schema">
+		<SimpleField type="int" name="FID"><displayName>FID</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Id"><displayName>Id</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7fffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_shaded_dot">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.06364</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.9</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>69ffedfa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i1611">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_noicon3">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffaaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i100">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i164">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="SVI_Shelf_Slope_Region1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#SVI_Shelf_Slope_Region0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#SVI_Shelf_Slope_Region2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7fffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin17">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i12">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_ylw-pushpin13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin130</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin131</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin80">
+		<PolyStyle>
+			<color>a6d991cb</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_shaded_dot">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0.9</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.9</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>69ffedfa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin40">
+		<PolyStyle>
+			<color>a67f0000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i14">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffffaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin15">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>99ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7faaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_noicon0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_noicon3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_noicon3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin16">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000aa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7fff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="SVI_Shelf_Slope_Region0">
+		<PolyStyle>
+			<color>a6fefea9</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_noicon">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_info-i150">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i151</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i169">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin7">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7faa00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_noicon1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_noicon0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_noicon0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="SVI_Shelf_Slope_Region2">
+		<PolyStyle>
+			<color>a6fefea9</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin17">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffaa00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i16">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i9">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>707f00ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7faaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_noicon3">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i110">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_info-i120">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i121</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffffaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_noicon">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i1610">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i10">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffaa00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>8cffffaa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin70</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f00aaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="sn_ylw-pushpin401">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin400</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fff0055</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_noicon1">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin90</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fff00aa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_info-i0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i02</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i03</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_info-i51">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i50</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin001">
+		<LineStyle>
+			<color>ff6e6e6e</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>a60000ff</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin000">
+		<LineStyle>
+			<color>ff6e6e6e</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>a60000ff</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin41">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7faaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7f00aa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin18">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fff00aa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="sn_info-i167">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i1611</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i1610</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i00">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin161">
+		<PolyStyle>
+			<color>a6005500</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i01">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i1612">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i7">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i13">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_noicon2">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i4">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_noicon1">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin9">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fff00aa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i02">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin21">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7fff00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="sn_ylw-pushpin16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin160</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin161</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_ylw-pushpin0000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000aa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin131">
+		<PolyStyle>
+			<color>a67faa55</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="sn_info-i161">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i168</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin8">
+		<PolyStyle>
+			<color>a6d991cb</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i1616">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i5">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin130">
+		<PolyStyle>
+			<color>a67faa55</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i03">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fff0055</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="sn_info-i165">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i1612</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i1616</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i104">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_noicon2">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_noicon">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_noicon2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_noicon</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin9">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7f00ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_noicon3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_noicon</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_noicon1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_noicon2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_noicon1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_noicon2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i8">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_info-i111">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i110</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>8cff55aa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin90">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>99ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin7">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>707f00ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin15">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7f00aa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_info-i160">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i1613</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i162</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i166">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffaaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i50">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i04">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i168">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>8cffffaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i101">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_info-i1614">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i166</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i164</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin18">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin80">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f00aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin19">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i121">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_info-i103">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_info-i05">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i04</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i15">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin140">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin41</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_shaded_dot">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_shaded_dot</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_shaded_dot</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="sn_info-i1615">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i169</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i163</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7f00ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_noicon0">
+		<IconStyle>
+			<scale>1.77273</scale>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin13">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7faaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i11">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_info-i20">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_ylw-pushpin81">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin80</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_ylw-pushpin8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i162">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin14">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f7faa00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin400">
+		<PolyStyle>
+			<color>a67f0000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i2">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_noicon0">
+		<IconStyle>
+			<scale>1.5</scale>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_info-i102">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i104</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin160">
+		<PolyStyle>
+			<color>a6005500</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin14">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fff00aa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i163">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="sn_info-i21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_info-i2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sn_info-i20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_info-i1613">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>8cff55aa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_info-i151">
+		<IconStyle>
+			<color>bfffffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.6</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin70">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>SalishSeaRegions</name>
+		<Folder>
+			<name>JuanDeFuca</name>
+			<open>1</open>
+			<Placemark>
+				<name>JuanDeFuca</name>
+				<styleUrl>#msn_ylw-pushpin80</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.635172322491,48.3881939050498,0 -123.578077513739,48.334166580838,0 -123.636578790837,48.12740177321017,0 -123.9847302686167,48.15152020353793,0 -124.540744128044,48.3381328655397,0 -124.591595222447,48.3244356817748,0 -124.5227043379012,48.57533457509781,0 -124.4020955704483,48.57647068402423,0 -124.3352917583659,48.51171192960613,0 -123.814237563698,48.3645393311668,0 -123.635172322491,48.3881939050498,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Juan de Fuca</name>
+				<styleUrl>#sn_info-i00</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#JuanDeFuca_Region_Coarse_schema">
+						<SimpleData name="FID">0</SimpleData>
+						<SimpleData name="FID_1">0</SimpleData>
+						<SimpleData name="Id">0</SimpleData>
+						<SimpleData name="ET_ID">0</SimpleData>
+						<SimpleData name="FID_2">0</SimpleData>
+						<SimpleData name="Id_1">0</SimpleData>
+						<SimpleData name="ET_ID_1">0</SimpleData>
+						<SimpleData name="ET_X">-124.01809</SimpleData>
+						<SimpleData name="ET_Y">48.30708</SimpleData>
+						<SimpleData name="Distance">0</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.92907,48.28768,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Tidal Mixed</name>
+			<Placemark>
+				<name>TidalMixed</name>
+				<styleUrl>#msn_ylw-pushpin18</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.4431850192845,48.4487657219331,0 -123.410414912165,48.6866660697918,0 -123.2484282960127,48.70937610789866,0 -123.181144949707,48.5033714573504,0 -123.0479037113839,48.45197373151073,0 -122.899658020781,48.3947880474206,0 -122.791074610851,48.4079287148643,0 -122.753035836672,48.4881559476787,0 -122.759951977432,48.5635418819612,0 -122.786924926395,48.60849679690019,0 -122.728829344013,48.6479187992314,0 -122.7657496082613,48.74366956716069,0 -122.8509495331708,48.76815787612907,0 -122.7025489500476,48.78839408530021,0 -122.478936107479,48.82317747715421,0 -122.425984805852,48.5994469426881,0 -122.47487933253,48.4420616550384,0 -122.5332265538313,48.37967757179029,0 -122.7231567117251,48.27756645889006,0 -122.809135455055,48.0955668664272,0 -122.8294214329545,47.99181281990526,0 -122.8767025827044,47.98870428782443,0 -123.2600879494616,48.10181244287355,0 -123.636578790837,48.12740177321017,0 -123.578077513739,48.334166580838,0 -123.578077513739,48.334166580838,0 -123.4431850192845,48.4487657219331,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tidal Mixed</name>
+				<LookAt>
+					<longitude>-121.9588901609395</longitude>
+					<latitude>48.31764120024294</latitude>
+					<altitude>0</altitude>
+					<heading>1.299295496510254</heading>
+					<tilt>5.572630181209327</tilt>
+					<range>359986.3758620058</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin00</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.1045871330569,48.28680131277748,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Puget Sound</name>
+			<Style>
+				<ListStyle>
+					<listItemType>check</listItemType>
+					<bgColor>00ffffff</bgColor>
+					<maxSnippetLines>2</maxSnippetLines>
+				</ListStyle>
+			</Style>
+			<Placemark>
+				<name>PugetSound</name>
+				<styleUrl>#msn_ylw-pushpin9</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-122.809135455055,48.0955668664272,0 -122.7231567117251,48.27756645889006,0 -122.5332265538313,48.37967757179029,0 -122.47487933253,48.4420616550384,0 -122.2792370696786,48.27747680381013,0 -122.1498791026544,47.99445409067268,0 -122.304355231745,47.3236120748346,0 -122.6641964503571,47.02699676127898,0 -123.12263659943,47.0829410843389,0 -123.1793891874499,47.42735345406378,0 -122.878262978312,47.74200933523489,0 -122.8294214329545,47.99181281990526,0 -122.809135455055,48.0955668664272,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Puget Sound</name>
+				<LookAt>
+					<longitude>-122.1020613370075</longitude>
+					<latitude>47.9017632078644</latitude>
+					<altitude>0</altitude>
+					<heading>1.194259842900181</heading>
+					<tilt>5.573124222433203</tilt>
+					<range>360552.7926844537</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin2</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-122.551401612353,47.86172716302097,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>San Juan Islands</name>
+			<Placemark>
+				<name>SanJuanIslands</name>
+				<styleUrl>#msn_ylw-pushpin17</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-122.9751677645156,48.80386089384781,0 -122.8509495331708,48.76815787612907,0 -122.7657496082613,48.74366956716069,0 -122.728829344013,48.6479187992314,0 -122.786924926395,48.60849679690019,0 -122.759951977432,48.5635418819612,0 -122.753035836672,48.4881559476787,0 -122.791074610851,48.4079287148643,0 -122.899658020781,48.3947880474206,0 -123.0479037113839,48.45197373151073,0 -123.181144949707,48.5033714573504,0 -123.2484282960127,48.70937610789866,0 -123.0103619121708,48.74275230142277,0 -122.9751677645156,48.80386089384781,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>San Juan Islands</name>
+				<LookAt>
+					<longitude>-122.5318513448626</longitude>
+					<latitude>48.9536155826782</latitude>
+					<altitude>0</altitude>
+					<heading>0.6556277696650272</heading>
+					<tilt>4.866067161273515</tilt>
+					<range>471241.1393468456</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-122.9324132702758,48.53534805788963,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Saanich Inlet</name>
+			<Placemark>
+				<name>Saanich_Inlet</name>
+				<styleUrl>#msn_ylw-pushpin6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.5569382429387,48.64947247549712,0 -123.541388872781,48.6956852297254,0 -123.472495169031,48.693449348115,0 -123.4503027665708,48.663422720809,0 -123.463350830365,48.5765548566922,0 -123.5534202961182,48.48947468687283,0 -123.5569382429387,48.64947247549712,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Saanich Inlet</name>
+				<LookAt>
+					<longitude>-122.5717987161941</longitude>
+					<latitude>48.70734964422365</latitude>
+					<altitude>0</altitude>
+					<heading>0.8476081992753729</heading>
+					<tilt>4.485452128253487</tilt>
+					<range>383995.596384975</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i150</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.50695,48.61258888888889,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Gulf Islands</name>
+			<open>1</open>
+			<Placemark>
+				<name>GulfIslands</name>
+				<styleUrl>#msn_ylw-pushpin11</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.606908644883,48.7011307351324,0 -123.541388872781,48.6956852297254,0 -123.541388872781,48.6956852297254,0 -123.472495169031,48.693449348115,0 -123.440190203074,48.6952185631764,0 -123.410414912165,48.6866660697918,0 -123.2484282960127,48.70937610789866,0 -123.0103619121708,48.74275230142277,0 -122.9751677645156,48.80386089384781,0 -123.157370473793,48.8036355458871,0 -123.2516336181533,48.84794369167172,0 -123.3276637784867,48.88336258130114,0 -123.5116026109863,48.95198888027433,0 -123.6763385203701,49.09096557001619,0 -123.6995738003756,49.12015351017216,0 -123.7136016806945,49.15501687641233,0 -123.7786690234475,49.16139487617762,0 -123.8573897739877,49.205638925219,0 -123.9665560486642,49.14188908883032,0 -123.950185473623,49.1353224928115,0 -123.606908644883,48.7011307351324,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Gulf Islands</name>
+				<LookAt>
+					<longitude>-123.1793031030225</longitude>
+					<latitude>48.49457368407648</latitude>
+					<altitude>0</altitude>
+					<heading>0.397831943141973</heading>
+					<tilt>4.485449510839777</tilt>
+					<range>383992.0493298816</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_noicon1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.4543333333333,48.84874612401358,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Southern Strait of Georgia</name>
+			<open>1</open>
+			<Placemark>
+				<name>SogSouthern</name>
+				<styleUrl>#msn_ylw-pushpin00</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-122.7485812843484,49.01069187959159,0 -122.7025489500476,48.78839408530021,0 -122.8509495331708,48.76815787612907,0 -122.9751677645156,48.80386089384781,0 -123.157370473793,48.8036355458871,0 -123.2516336181533,48.84794369167172,0 -123.2366288014622,48.86389848161625,0 -123.1260522644469,48.97979063113138,0 -123.0947488806628,49.01037223686647,0 -122.8903672124201,49.05770939188572,0 -122.7485812843484,49.01069187959159,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Southern Strait of Georgia</name>
+				<LookAt>
+					<longitude>-122.5717987161941</longitude>
+					<latitude>48.70734964422365</latitude>
+					<altitude>0</altitude>
+					<heading>0.8476081992753729</heading>
+					<tilt>4.485452128253487</tilt>
+					<range>383995.596384975</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i21</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-122.9651111111111,48.88243055555556,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Central Strait of Georgia</name>
+			<open>1</open>
+			<Placemark>
+				<name>SogCentral</name>
+				<styleUrl>#msn_ylw-pushpin1</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.0854038261248,49.29584512504432,0 -124.0579181190746,49.26790625456315,0 -123.9148613965868,49.24442422761638,0 -123.8484838462103,49.20872902484737,0 -123.8061662614532,49.21510094823465,0 -123.7966491739746,49.19280239372472,0 -123.6997998776127,49.16258611574979,0 -123.6306284927909,49.15246699122427,0 -123.6382250057745,49.08798159524526,0 -123.5015829793496,48.97152446813829,0 -123.331974757616,48.90218473837615,0 -123.2366288014622,48.86389848161625,0 -123.1260522644469,48.97979063113138,0 -123.282613682006,49.03991150554053,0 -123.3263936250957,49.10573550682627,0 -123.2968961791407,49.23845074946305,0 -123.3083580137598,49.28441945411197,0 -123.2632809331929,49.33039443981181,0 -123.3418884323551,49.34594042253727,0 -123.3418884323551,49.34594042253727,0 -123.3851343144335,49.32065728477658,0 -123.6111796058778,49.39767785523397,0 -123.7102332071386,49.41752717680291,0 -123.7537682595055,49.44845014724724,0 -123.9645680151218,49.46234108070419,0 -124.0386604729463,49.49131933556932,0 -124.1927600522185,49.32332416610143,0 -124.0854038261248,49.29584512504432,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Central Strait of Georgia</name>
+				<Camera>
+					<longitude>-123.5738378899047</longitude>
+					<latitude>48.65692332945249</latitude>
+					<altitude>598728.7250276586</altitude>
+					<heading>-0.34582760363226</heading>
+					<tilt>2.779148613664271</tilt>
+					<roll>-0.735636336870643</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#msn_noicon2</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.6006328366549,49.24776476816713,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Nearshore-Central West</name>
+			<open>1</open>
+			<Placemark>
+				<name>Nearshore-CWest</name>
+				<styleUrl>#msn_ylw-pushpin5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.2611728767746,49.24596232067884,0 -124.0380229770633,49.17966786285587,0 -123.9665569061479,49.14188905456987,0 -123.8573891982036,49.20563867666333,0 -123.7786690234475,49.16139487617762,0 -123.7136016806945,49.15501687641233,0 -123.6995738003756,49.12015351017216,0 -123.6763385203701,49.09096557001619,0 -123.5116026109863,48.95198888027433,0 -123.3276637784867,48.88336258130114,0 -123.2516336181533,48.84794369167172,0 -123.2366288014622,48.86389848161625,0 -123.331974757616,48.90218473837615,0 -123.5015829793496,48.97152446813829,0 -123.6382250057745,49.08798159524526,0 -123.6306284927909,49.15246699122427,0 -123.6997998776127,49.16258611574979,0 -123.7966491739746,49.19280239372472,0 -123.8061662614532,49.21510094823465,0 -123.8484838462103,49.20872902484737,0 -123.9148613965868,49.24442422761638,0 -124.0579181190746,49.26790625456315,0 -124.0854038261248,49.29584512504432,0 -124.1927598532715,49.32332410976284,0 -124.2611728767746,49.24596232067884,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Nearshore Central West</name>
+				<Camera>
+					<longitude>-122.6769760380213</longitude>
+					<latitude>48.65386428474357</latitude>
+					<altitude>337745.4045097511</altitude>
+					<heading>0.05082076001448697</heading>
+					<tilt>2.052713519404207</tilt>
+					<roll>-1.106098992683003</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#msn_noicon3</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-124.3205064066188,49.24797102635732,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Nearshore - Central East</name>
+			<open>1</open>
+			<Placemark>
+				<name>Nearshore-CEast</name>
+				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.2632809331929,49.33039443981181,0 -123.2592703928697,49.26346447119242,0 -123.0947488806628,49.01037223686647,0 -123.1260522644469,48.97979063113138,0 -123.282613682006,49.03991150554053,0 -123.3263936250957,49.10573550682627,0 -123.2968961791407,49.23845074946305,0 -123.3083580137598,49.28441945411197,0 -123.2632809331929,49.33039443981181,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Nearshore-CEast</name>
+				<styleUrl>#msn_ylw-pushpin2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.0386604729463,49.49131933556932,0 -123.9645680151218,49.46234108070419,0 -123.7537682595055,49.44845014724724,0 -123.7102332071386,49.41752717680291,0 -123.6111796058778,49.39767785523397,0 -123.3851343144335,49.32065728477658,0 -123.3418884323551,49.34594042253727,0 -123.5250142660947,49.38215669604639,0 -123.5250142660947,49.38215669604639,0 -123.5617638327474,49.39054174071686,0 -123.6215663839522,49.41891749131551,0 -123.749133487844,49.47959362786109,0 -123.954604955304,49.57966660753571,0 -124.0386604729463,49.49131933556932,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Nearshore Central East</name>
+				<LookAt>
+					<longitude>-123.1771233828782</longitude>
+					<latitude>49.15939010336787</latitude>
+					<altitude>0</altitude>
+					<heading>0.3979459423193131</heading>
+					<tilt>2.79552667994202</tilt>
+					<range>367234.600298197</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_noicon</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.0949206515981,49.12695623761051,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Nearshore Central East</name>
+				<LookAt>
+					<longitude>-123.1771233828782</longitude>
+					<latitude>49.15939010336787</latitude>
+					<altitude>0</altitude>
+					<heading>0.3979459423193131</heading>
+					<tilt>2.79552667994202</tilt>
+					<range>367234.600298197</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_noicon0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.7713441722345,49.52264057105336,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Vancouver Harbour</name>
+			<Placemark>
+				<name>VancouverHarbour</name>
+				<styleUrl>#msn_ylw-pushpin16</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-122.8465254026612,49.43911397046659,0 -122.888740489841,49.485633396203,0 -122.962714361683,49.3080646075336,0 -123.2417709601062,49.34477393220941,0 -123.263280636196,49.33038790608273,0 -123.2592703928697,49.26346447119242,0 -122.83803401816,49.2765528769292,0 -122.8465254026612,49.43911397046659,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Vancouver Harbour and Indian Arm</name>
+				<LookAt>
+					<longitude>-123.5015026392741</longitude>
+					<latitude>49.25145755673419</latitude>
+					<altitude>0</altitude>
+					<heading>0.003013393000508101</heading>
+					<tilt>6.051788763649322</tilt>
+					<range>365560.7018719282</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i51</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-122.8963372634808,49.30750819065432,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Howe Sound</name>
+			<Placemark>
+				<name>HoweSound</name>
+				<styleUrl>#msn_ylw-pushpin140</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.13001432768,49.76215812796729,0 -123.2632809331929,49.33039443981181,0 -123.3418884323551,49.34594042253727,0 -123.5250142660947,49.38215669604639,0 -123.498408729051,49.51690609803449,0 -123.13001432768,49.76215812796729,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Howe Sound</name>
+				<LookAt>
+					<longitude>-123.5015026392741</longitude>
+					<latitude>49.25145755673419</latitude>
+					<altitude>0</altitude>
+					<heading>0.003013393000508101</heading>
+					<tilt>6.051788763649322</tilt>
+					<range>365560.7018719282</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i160</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.3725402930709,49.4361900775809,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Jervis Inlet</name>
+			<Placemark>
+				<name>JervisInlet</name>
+				<styleUrl>#msn_ylw-pushpin12</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-123.5102895872686,49.69634164429183,0 -123.749133487844,49.47959362786109,0 -124.0096208331153,49.60646198113579,0 -124.2691359414413,49.74589416265244,0 -123.996660518588,50.2005040289866,0 -123.754062686681,50.2128304736155,0 -123.742751702685,50.0748697198586,0 -123.83546852046,49.9076941053709,0 -123.5102895872686,49.69634164429183,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Jervis Inlet</name>
+				<LookAt>
+					<longitude>-123.1611732853814</longitude>
+					<latitude>49.17991803487906</latitude>
+					<altitude>0</altitude>
+					<heading>0.2840560183633829</heading>
+					<tilt>6.864182681042607</tilt>
+					<range>345150.3555717378</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i165</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-123.9394194444445,49.76976944444445,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Northern Strait of Georgia</name>
+			<open>1</open>
+			<Placemark>
+				<name>SogNorthern</name>
+				<styleUrl>#msn_ylw-pushpin</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-125.0642116414469,50.11521885546018,0 -125.14901093147,50.01221140185059,0 -125.1701224326368,49.98753493041016,0 -125.0580678309709,49.86400185132224,0 -124.889559818475,49.7881825767003,0 -124.697355008771,49.5824004835367,0 -124.5343256231221,49.5095199872883,0 -124.6597852867821,49.4735159629066,0 -124.5737496025176,49.41831266225023,0 -124.4502601434671,49.38167959413042,0 -124.362441498451,49.3882288374756,0 -124.2512054035053,49.33821679303021,0 -124.1927609046987,49.32332591402778,0 -124.0386595734328,49.49132004528585,0 -124.0427944745394,49.5632135810631,0 -124.0711909658887,49.62029307310675,0 -124.0967478134547,49.61911896423902,0 -124.104375206254,49.63923052300639,0 -124.1479124311147,49.64216399389395,0 -124.173956646567,49.6580022610976,0 -124.2078290303334,49.66502981006749,0 -124.2212876955951,49.71751621735525,0 -124.2618280321949,49.73975096235439,0 -124.2742819016202,49.73192215053834,0 -124.2992710809902,49.73649179314846,0 -124.3063012426906,49.74958305810485,0 -124.3288674176121,49.75702478021564,0 -124.3811893698331,49.75173846912956,0 -124.4433433492769,49.76821301857338,0 -124.5346494345545,49.79737995767104,0 -124.5569465741547,49.85047301597815,0 -124.6208273165579,49.88047709011729,0 -124.7100162275458,49.93436845777977,0 -124.8224965230078,49.90309351727447,0 -125.0005565222629,49.98964117842294,0 -125.0642753621593,50.03323135688098,0 -125.0642116414469,50.11521885546018,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Northern Strait of Georgia</name>
+				<Camera>
+					<longitude>-123.5081568174174</longitude>
+					<latitude>48.94242542358685</latitude>
+					<altitude>290819.4432216787</altitude>
+					<heading>-0.2918575267042233</heading>
+					<tilt>2.780170282448376</tilt>
+					<roll>-0.7815713472127314</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#sn_info-i1614</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-124.4049606482813,49.63571202141669,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Nearshore North West</name>
+			<open>1</open>
+			<Placemark>
+				<name>Nearshore-NWest</name>
+				<styleUrl>#msn_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.864081973562,49.6992057661872,0 -124.8986391333815,49.66711193164422,0 -124.83477528371,49.612799451697,0 -124.826743299544,49.59372846769171,0 -124.831110924796,49.5575395727496,0 -124.752493670267,49.4982646586203,0 -124.694466649066,49.4795462646847,0 -124.666389058163,49.4452292091362,0 -124.685428686711,49.4181506263126,0 -124.3254812921201,49.26511038414001,0 -124.2611727644571,49.24596220893339,0 -124.1927602608937,49.32332412527888,0 -124.2511763819574,49.33821787005994,0 -124.362441498451,49.3882288374756,0 -124.4502601434671,49.38167959413042,0 -124.5737496025176,49.41831266225023,0 -124.6597852867821,49.4735159629066,0 -124.5343256231221,49.5095199872883,0 -124.697355008771,49.5824004835367,0 -124.889559818475,49.7881825767003,0 -125.0580678309709,49.86400185132224,0 -125.1701224326368,49.98753493041016,0 -125.226166736424,49.9227004168026,0 -124.864081973562,49.6992057661872,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Nearshore North West</name>
+				<LookAt>
+					<longitude>-123.8256641738237</longitude>
+					<latitude>49.60462379781567</latitude>
+					<altitude>0</altitude>
+					<heading>-0.2497412367462996</heading>
+					<tilt>6.05159528465965</tilt>
+					<range>365356.3816755162</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i167</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-124.5818181402817,49.36974462073336,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Nearshore North East</name>
+			<open>1</open>
+			<Placemark>
+				<name>Nearshore-NEast</name>
+				<styleUrl>#msn_ylw-pushpin8</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.0386591300739,49.49132277955572,0 -123.9546046901291,49.57966684809291,0 -124.0096208331153,49.60646198113579,0 -124.2691359414413,49.74589416265244,0 -124.6676270241451,49.96003948812652,0 -124.8340228459813,50.05988818784164,0 -125.0642116414469,50.11521885546018,0 -125.0642753621593,50.03323135688098,0 -125.0005565222629,49.98964117842294,0 -124.8224965230078,49.90309351727447,0 -124.7100162275458,49.93436845777977,0 -124.6208273165579,49.88047709011729,0 -124.5569465741547,49.85047301597815,0 -124.5346494345545,49.79737995767104,0 -124.4433433492769,49.76821301857338,0 -124.3811893698331,49.75173846912956,0 -124.3288674176121,49.75702478021564,0 -124.3063012426906,49.74958305810485,0 -124.2992710809902,49.73649179314846,0 -124.2742819016202,49.73192215053834,0 -124.2618280321949,49.73975096235439,0 -124.2212876955951,49.71751621735525,0 -124.2078290303334,49.66502981006749,0 -124.173956646567,49.6580022610976,0 -124.1479124311147,49.64216399389395,0 -124.104375206254,49.63923052300639,0 -124.0967478134547,49.61911896423902,0 -124.0711909658887,49.62029307310675,0 -124.0427943664578,49.56321168060835,0 -124.0386591300739,49.49132277955572,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Nearshore North East</name>
+				<LookAt>
+					<longitude>-123.8256641738237</longitude>
+					<latitude>49.60462379781567</latitude>
+					<altitude>0</altitude>
+					<heading>-0.2497412367462996</heading>
+					<tilt>6.05159528465965</tilt>
+					<range>365356.3816755162</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i161</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-124.7068127665249,49.97336653963805,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Baynes Sound</name>
+			<Placemark>
+				<name>BaynesSound</name>
+				<styleUrl>#msn_ylw-pushpin10</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.8986391333815,49.66711193164422,0 -124.83477528371,49.612799451697,0 -124.826743299544,49.59372846769171,0 -124.831110924796,49.5575395727496,0 -124.752493670267,49.4982646586203,0 -124.694466649066,49.4795462646847,0 -124.666389058163,49.4452292091362,0 -124.685428686711,49.4181506263126,0 -124.83762271425,49.47302470307002,0 -124.9900774235835,49.68580448206708,0 -124.8986391333815,49.66711193164422,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Baynes Sound</name>
+				<LookAt>
+					<longitude>-123.5015026392741</longitude>
+					<latitude>49.25145755673419</latitude>
+					<altitude>0</altitude>
+					<heading>0.003013393000508101</heading>
+					<tilt>6.051788763649322</tilt>
+					<range>365560.7018719282</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#sn_info-i1615</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-124.8851727779086,49.51483191818048,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Mainland Inlets</name>
+			<Placemark>
+				<name>Mainland_Inlets</name>
+				<styleUrl>#msn_ylw-pushpin13</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.309457280133,50.5250179587806,0 -124.6676270241451,49.96003948812652,0 -124.8340228459813,50.05988818784164,0 -125.0642116414469,50.11521885546018,0 -125.14901093147,50.01221140185059,0 -125.290957890654,50.14732406071911,0 -125.251360809579,50.2599549296567,0 -125.433984828271,50.4000633889905,0 -125.835142844452,50.417433398366,0 -126.0152495474833,50.48033513032756,0 -125.4289954642612,50.76051492668147,0 -125.13610732977,50.5405888098515,0 -124.933222974083,51.0262426978458,0 -124.766250451722,50.92419377741471,0 -124.818847609023,50.4192143677987,0 -124.309457280133,50.5250179587806,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mainland Inlets</name>
+				<Camera>
+					<longitude>-124.0098599658349</longitude>
+					<latitude>50.00656112717571</latitude>
+					<altitude>418214.3458810399</altitude>
+					<heading>-0.6161328912477057</heading>
+					<tilt>3.324414847376708</tilt>
+					<roll>-0.5693716073792132</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#sn_info-i111</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-124.9549111111111,50.35046111111111,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Johnston &amp; Discovery</name>
+			<Placemark>
+				<name>Johnston_Discovery</name>
+				<styleUrl>#msn_ylw-pushpin4</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-126.0152495474833,50.48033513032756,0 -125.835142844452,50.417433398366,0 -125.433984828271,50.4000633889905,0 -125.251360809579,50.2599549296567,0 -125.290957890654,50.14732406071911,0 -125.14901093147,50.01221140185059,0 -125.1701224326368,49.98753493041016,0 -125.226166736424,49.9227004168026,0 -125.235096588926,49.9282123147606,0 -125.387276935755,50.11463523600619,0 -125.488820659661,50.3153376182277,0 -125.955775017879,50.371709953019,0 -126.899116742775,50.5070620421177,0 -126.744215532989,50.60997537098319,0 -126.0152495474833,50.48033513032756,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Johnstone and Discovery</name>
+				<Camera>
+					<longitude>-124.7381144804911</longitude>
+					<latitude>49.86075082720353</latitude>
+					<altitude>419175.2542777771</altitude>
+					<heading>-1.16582446398745</heading>
+					<tilt>3.324414847376818</tilt>
+					<roll>-0.5693716073794202</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#sn_info-i103</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-126.0904,50.4121111111111,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Broughton</name>
+			<open>1</open>
+			<Placemark>
+				<name>Broughton</name>
+				<styleUrl>#msn_ylw-pushpin7</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-126.7452271677273,50.61026882003072,0 -126.7139908767798,50.70269081219806,0 -127.0138775403422,50.82836517513012,0 -126.9061113080711,50.92509462806626,0 -126.6531743956156,50.88462153440308,0 -126.5554280028538,51.08463562423328,0 -125.5589614561179,51.13427915199785,0 -125.4289954642612,50.76051492668147,0 -126.0152495474833,50.48033513032756,0 -126.7452271677273,50.61026882003072,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Broughton</name>
+				<Camera>
+					<longitude>-123.9489303305903</longitude>
+					<latitude>49.66382849914791</latitude>
+					<altitude>419171.7286622509</altitude>
+					<heading>-0.5388172159125052</heading>
+					<tilt>3.324414847376599</tilt>
+					<roll>-0.5693716073793691</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#sn_info-i102</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-126.1262588548168,50.75265074990854,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+	<Folder>
+		<name>AlaskaArcticRegions</name>
+		<Folder>
+			<name>Labrador Sea</name>
+			<Placemark>
+				<name>Labrador Sea</name>
+				<styleUrl>#sn_info-i120</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#NVI_Basin_Region_schema">
+						<SimpleData name="FID">0</SimpleData>
+						<SimpleData name="Id">0</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-46.80431,55.69895000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Labrador Sea</name>
+				<styleUrl>#msn_ylw-pushpin15</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-63.74697917756885,65.02535385446215,0 -67.36369003321012,66.62648153088274,0 -68.10797076977052,65.30205968406573,0 -64.45374591973977,62.57616145511385,0 -64.57694718970691,60.4638458052289,0 -66.20847769894061,56.92135523188354,0 -55.92479514917541,52.02411424823652,0 -51.71810473362296,47.23729811652817,0 -36.84403480998044,48.798386445322,0 -43.82553134521974,59.34534658147431,0 -50.56211654959127,64.82593659798152,0 -63.74697917756885,65.02535385446215,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Document>
+			<name>Alaska Basin East</name>
+			<Style id="sn_info-i17">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin180">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>730055ff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin19">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin180</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin000</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin000">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>730055ff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Alaska Basin East Info</name>
+				<Placemark>
+					<name>Alaska Basin East</name>
+					<styleUrl>#sn_info-i17</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-150,46.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Alaska Basin East</name>
+				<styleUrl>#msn_ylw-pushpin19</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-151.3821370724993,53.93476766838654,0 -179.6711053277849,48.19536996671131,0 -179.8305045583689,37.85159241789374,0 -128.3960104464279,41.96988256890616,0 -128.1067927648782,46.57252773540115,0 -128.7362895167252,47.0197029333772,0 -130.1844241692775,47.70763332458168,0 -132.2340315137626,48.84245769506185,0 -134.0370241631195,49.96081770099342,0 -132.477203010031,50.86004004438969,0 -136.5850543180366,53.08231215545029,0 -137.0801485754874,54.39099217930334,0 -141.8164285736668,56.80813343746092,0 -151.3821370724993,53.93476766838654,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Alaska Basin West</name>
+			<Style id="sn_info-i18">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin19">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8a005555</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin200">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8a005555</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin20">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin200</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin19</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Folder>
+				<name>Alaska Basin West Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Alaska Basin West</name>
+					<styleUrl>#sn_info-i18</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>164,46.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Alaska Basin West</name>
+				<styleUrl>#msn_ylw-pushpin20</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								159.3135501758582,53.64788074876152,0 143.193427107026,41.94942331647859,0 179.7756310984216,37.83967569941441,0 179.7866453347849,48.14037647014966,0 159.3135501758582,53.64788074876152,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Baffin Bay</name>
+			<Style id="sn_info-i190">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_shaded_dot0">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>bdffaaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_shaded_dot0">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>bdffaaff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_shaded_dot0">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot0</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot0</styleUrl>
+				</Pair>
+			</StyleMap>
+			<StyleMap id="sn_info-i170">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_info-i190</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sn_info-i180</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i180">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>Baffin Bay Info</name>
+				<Placemark>
+					<name>Baffin Bay</name>
+					<styleUrl>#sn_info-i170</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-62,70.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Baffin Bay</name>
+				<styleUrl>#msn_shaded_dot0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-50.55758324531172,64.81795413255701,0 -49.27532371943228,70.2633852242196,0 -59.22559638939399,76.93726347043182,0 -83.69237474076108,74.65976020335421,0 -83.18320161547509,73.58945352591721,0 -63.64553241677142,65.0171142928465,0 -50.55758324531172,64.81795413255701,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Amundsen Basin East</name>
+			<Style id="sh_ylw-pushpin0000">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c2ffffff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin70">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin1800</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin0000</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i200">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin1800">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c2ffffff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Amundsen Basin Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Amundsen Basin</name>
+					<styleUrl>#sn_info-i200</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-175,86.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Amundsen Basin</name>
+				<styleUrl>#msn_ylw-pushpin70</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-103.1242168490362,85.13302249521122,0 -100.37235829331,83.17037394903578,0 -50.82501377115453,84.97470146195158,0 -53.74346017284895,88.10958866046693,0 -83.42490354820268,89.11774931686568,0 -172.6223473586909,89.04055151719309,0 -179.1566963277921,88.24280203931281,0 -179.9276149301838,84.07943468492509,0 -151.4776183161694,85.35931147321422,0 -103.1242168490362,85.13302249521122,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Canadian Basin/ Beaufort Sea West</name>
+			<StyleMap id="msn_shaded_dot1">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot2</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot1</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_shaded_dot2">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>7f00ff00</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_shaded_dot1">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>7f00ff00</color>
+				</PolyStyle>
+			</Style>
+			<Placemark>
+				<name>Canadian Basin/ Beaufort Sea</name>
+				<styleUrl>#msn_shaded_dot1</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								179.9630976918066,83.99670724772496,0 149.5795191715057,80.44776113936645,0 179.9612976442729,75.88218450229438,0 179.9630976918066,83.99670724772496,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Nansen Basin</name>
+			<Style id="sn_info-i210">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin100">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin2000</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin100</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_ylw-pushpin2000">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c27faaaa</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin100">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c27faaaa</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Nansen Basin Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Nansen Basin</name>
+					<styleUrl>#sn_info-i210</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>69,86.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Nansen Basin</name>
+				<styleUrl>#msn_ylw-pushpin100</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								123.4816424419028,77.21005387820271,0 138.01344257806,79.10639510096411,0 146.0302835497199,85.21080806344696,0 124.6674996793649,89.1612147312939,0 -83.68900736494868,89.12506045425151,0 -53.80835756501302,88.10852093403746,0 -50.85759315528301,84.97662692137831,0 -14.46819036497496,85.26545314964118,0 -26.10106996971913,83.64883371669248,0 -7.330170118301567,81.61706887846499,0 12.62523020400496,80.62459340332015,0 52.20969298321813,83.15775456042658,0 97.419248418655,81.74063892513411,0 123.4816424419028,77.21005387820271,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Canadian Beaufort Shelf/Slope</name>
+			<Style id="sh_shaded_dot3">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>917faaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i22">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_shaded_dot3">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>917faaff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_shaded_dot3">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot3</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot3</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Folder>
+				<name>Canadian Beaufort Shelf/Slope Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Canadian Beaufort Shelf/Slope</name>
+					<styleUrl>#sn_info-i22</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-128,69.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Canadian Beaufort Shelf/Slope</name>
+				<styleUrl>#msn_shaded_dot3</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-118.6990731866936,74.15913164307276,0 -130.3704991010306,74.55237003917679,0 -130.4043249452579,72.77395911229573,0 -135.9509650557579,70.57940739858742,0 -140.8129971721312,70.86556257520527,0 -141.0055834026041,68.8766734271109,0 -132.7835641446205,68.34035030891785,0 -127.2577745248459,70.07470203795687,0 -128.2679602949795,70.62566171705046,0 -118.6990731866936,74.15913164307276,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Chukchi/ESS/Laptev</name>
+			<StyleMap id="msn_shaded_dot6">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot4</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot4</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_shaded_dot4">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>8cffaaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_shaded_dot4">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>8cffaaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i23">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>Chukchi/ESS/Laptev Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Chukchi/ESS/Laptev</name>
+					<styleUrl>#sn_info-i23</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>179,70.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Chukchi/ESS/Laptev</name>
+				<styleUrl>#msn_shaded_dot6</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-179.8728707555234,75.78121922641645,0 -179.9757161872476,66.4585801985,0 -160.715452476182,65.46907948650605,0 -161.3900091329198,70.10525166649111,0 -159.6152432968928,73.17343449838133,0 -179.8728707555234,75.78121922641645,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>US Beaufort Shelf/Slope</name>
+			<Style id="sn_shaded_dot6">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>9100aaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_shaded_dot6">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>9100aaff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_shaded_dot60">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot6</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot6</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i24">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>US Beaufort Shelf/Slope Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>US Beaufort Shelf/Slope</name>
+					<styleUrl>#sn_info-i24</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-150,70.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>US Beau Sea Shelf</name>
+				<styleUrl>#msn_shaded_dot60</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-140.8129971721312,70.86556257520527,0 -152.1727504379296,71.55089236173015,0 -159.5628185179862,73.17697736232896,0 -161.2393846617171,70.24270135769513,0 -140.9925666319662,68.89680097253167,0 -140.8129971721312,70.86556257520527,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Canadian Arctic Archipelago South</name>
+			<Style id="sn_info-i25">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_shaded_dot7">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>adffffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_shaded_dot7">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>adffffff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_shaded_dot7">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot7</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot7</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Folder>
+				<name>Canadian Arctic Archipelago South Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Canadian Arctic Archipelago South</name>
+					<styleUrl>#sn_info-i25</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-102,70.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Canadian Arctic Archipelago South</name>
+				<styleUrl>#msn_shaded_dot7</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-83.21165628783851,73.62525678195752,0 -83.72494303675116,74.66433593446877,0 -119.0196062085982,74.13131173709479,0 -128.2825335952264,70.64224523808869,0 -126.0896689261202,69.30627482536715,0 -115.9858812124348,67.37950020475819,0 -95.30343118254928,67.13782548973634,0 -85.06844547814916,66.89929235791483,0 -83.21165628783851,73.62525678195752,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Amundsen Basin West</name>
+			<Style id="sn_ylw-pushpin210">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c2ffffff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin30">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin210</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin300</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin300">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c2ffffff</color>
+				</PolyStyle>
+			</Style>
+			<Placemark>
+				<name>Amundsen Basin West</name>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								179.8799922475166,83.98583590610971,0 179.9002967022469,88.95167346375295,0 124.4861283557279,89.20009905372756,0 146.132491830188,85.21395101019927,0 137.9659809165848,79.09975446311849,0 179.8799922475166,83.98583590610971,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Canadian Basin/ Beaufort Sea East</name>
+			<Style id="sn_info-i26">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<StyleMap id="msn_shaded_dot8">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_shaded_dot8</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_shaded_dot8</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_shaded_dot8">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.6</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>7500ff00</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_shaded_dot8">
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>0.709091</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+				<PolyStyle>
+					<color>7500ff00</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Canadian Basin/ Beaufort Sea Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Canadian Basin/ Beaufort Sea</name>
+					<styleUrl>#sn_info-i26</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-150,78.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Canadian Basin/ Beaufort Sea Est</name>
+				<styleUrl>#msn_shaded_dot8</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-179.6991595053285,84.0876914737736,0 -179.9270550919549,75.89721138314745,0 -159.6151865715267,73.15006028988267,0 -152.132315440145,71.55769429315235,0 -135.9155062277673,70.58625719858883,0 -130.4133599987843,72.76647361991164,0 -130.434986675719,74.56603398698758,0 -121.1804904902936,78.54557034074182,0 -100.3530305176447,82.6848351997165,0 -103.136918754813,85.1162102063966,0 -150.4712550213308,85.37291696366273,0 -179.6991595053285,84.0876914737736,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Canadian Arctic Archipelago North</name>
+			<Style id="sn_info-i27">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin50">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin220</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin50</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_ylw-pushpin220">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c2ffff55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin50">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>c2ffff55</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Canadian Arctic Archipelago North Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Canadian Arctic Archipelago North</name>
+					<styleUrl>#sn_info-i27</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-81,79,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Canadian Arctic Archipelago North</name>
+				<styleUrl>#msn_ylw-pushpin50</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-130.4581253900505,74.55831568909329,0 -118.5564689046421,74.13992254694449,0 -83.84137429671483,74.64635032289957,0 -59.53347341896997,76.89439587679607,0 -25.67330613323701,83.70710336961102,0 -14.39829700538368,85.27020226620705,0 -50.43804093360226,84.98901800384957,0 -100.6175652338036,83.15586888170739,0 -100.3847397088494,82.68189963181989,0 -121.1984352326226,78.53697901386391,0 -130.4581253900505,74.55831568909329,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Chukchi/ESS/Laptev West</name>
+			<Style id="sn_ylw-pushpin25">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8cffaaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin80">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8cffaaff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin800">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin25</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin80</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Placemark>
+				<name>Chukchi/ESS/Laptev West</name>
+				<styleUrl>#msn_ylw-pushpin800</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								179.7100436497582,66.68073881337877,0 179.339581064881,75.93569552149084,0 149.9188349166191,80.44203277041819,0 137.2560549432808,79.11558404078357,0 140.720761199895,71.40252315689779,0 160.302884632692,68.68634304927896,0 179.7100436497582,66.68073881337877,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Dixon Basin</name>
+			<Style id="sn_ylw-pushpin26">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>e8ffff55</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin8000">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin26</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin700</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin700">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>e8ffff55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i28">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>Dixon Basin Info</name>
+				<Placemark>
+					<name>Dixon Basin</name>
+					<styleUrl>#sn_info-i28</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-135.8,54,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Dixon Basin</name>
+				<styleUrl>#msn_ylw-pushpin8000</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-136.5860241583727,53.08859865478195,0 -134.0360471945518,53.8748244390119,0 -134.1168123270675,53.99468404727293,0 -134.278892135096,54.08696856455065,0 -134.3904352457826,54.29863878131173,0 -134.5923592099609,54.53129574517147,0 -134.9564827286726,54.8010150144394,0 -135.1354730081071,54.92267121481863,0 -134.9570432249149,55.0467827545663,0 -137.0808820579203,54.39591214244123,0 -136.5860241583727,53.08859865478195,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Dixon Shelf</name>
+			<StyleMap id="msn_ylw-pushpin1000">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin28</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin1000</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin1000">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>abffff55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin28">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>abffff55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i29">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>Dixon Shelf Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Dixon Shelf</name>
+					<styleUrl>#sn_info-i29</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-132.5,54.49999999999999,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Dixon Shelf</name>
+				<styleUrl>#msn_ylw-pushpin1000</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-134.9560930248004,55.04906108082663,0 -135.1383039452922,54.92080534478477,0 -134.95544771826,54.80371975294069,0 -134.5885406230701,54.52582251081131,0 -134.3958680271735,54.30590365973542,0 -134.2871827978063,54.09639254256942,0 -134.1298468501946,54.00261796250579,0 -134.0392471282768,53.87651006123389,0 -133.0821852760259,53.82034518426109,0 -131.6602150692286,54.17089009686439,0 -130.1965930572902,54.80048664517466,0 -130.8980575412898,56.26170446865984,0 -134.9560930248004,55.04906108082663,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Sitka Basin</name>
+			<Style id="sn_info-i31">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin140">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d4ffaaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin32">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d4ffaaff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin1400">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin32</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin140</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Folder>
+				<name>Sitka Basin Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Sitka Basin</name>
+					<styleUrl>#sn_info-i31</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-138.4,56,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Sitka Basin</name>
+				<styleUrl>#msn_ylw-pushpin1400</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-137.0983315078878,54.38779864628419,0 -134.9572496257536,55.0467140640092,0 -135.9701302360371,56.51689372573678,0 -137.063205059442,57.73798487889263,0 -138.6742742226022,58.05251500284764,0 -140.5907305843877,58.65351301347364,0 -141.8390649451852,56.82376233715328,0 -137.0983315078878,54.38779864628419,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Sitka Shelf</name>
+			<Style id="sn_ylw-pushpin35">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>85ffaaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i32">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin150">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>85ffaaff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin160">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin35</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin150</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Folder>
+				<name>Sitka Shelf Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Sitka Shelf</name>
+					<styleUrl>#sn_info-i32</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-135.5,57.49999999999999,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Sitka Shelf</name>
+				<styleUrl>#msn_ylw-pushpin160</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-134.9562394013736,55.04206834137263,0 -130.8827659433373,56.2604549389856,0 -138.522901113812,61.67507342945466,0 -140.5918786177973,58.65464289630506,0 -138.6851673207493,58.05379848019759,0 -137.0489777855772,57.73728298694691,0 -135.9821530885286,56.53017359695405,0 -134.9562394013736,55.04206834137263,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Yakutat Basin</name>
+			<StyleMap id="msn_ylw-pushpin180">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin38</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin170</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin170">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d4ffaa55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin38">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d4ffaa55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i33">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>Yakutat Basin Info</name>
+				<Placemark>
+					<name>Yakutat Basin</name>
+					<styleUrl>#sn_info-i33</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-146.4,57,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Yakutat Basin</name>
+				<styleUrl>#msn_ylw-pushpin180</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-141.8033529168133,56.82627129674478,0 -140.5783545255889,58.66276100036085,0 -142.9439017251653,59.14331104728607,0 -146.3630026989688,58.95260448230303,0 -147.3239152658008,58.00769629620945,0 -149.5548944337694,56.91574609801527,0 -153.391671455869,55.627793409387,0 -151.3710284028387,53.92365056251049,0 -141.8033529168133,56.82627129674478,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Yakutat Shelf</name>
+			<StyleMap id="msn_ylw-pushpin21">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin39</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin190</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i34">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin39">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8cffaa55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin190">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8cffaa55</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Yakutat Shelf Info</name>
+				<Placemark>
+					<name>Yakutat Shelf</name>
+					<styleUrl>#sn_info-i34</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-146.4,59.5,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Yakutat Shelf</name>
+				<styleUrl>#msn_ylw-pushpin21</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-140.57024153297,58.66197553858808,0 -138.5239445342274,61.64027541340153,0 -159.2658966068183,61.20176605527661,0 -155.9668339432752,57.77405945091964,0 -153.3899139660898,55.61516907928846,0 -149.5607280250124,56.91031056203545,0 -147.3213343162864,58.01378782774998,0 -146.3484567987096,58.95545869178113,0 -142.9350417368581,59.1435142332151,0 -140.57024153297,58.66197553858808,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Aleutian East</name>
+			<Style id="sh_ylw-pushpin21">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d47faa55</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i35">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin210">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin410</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin21</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_ylw-pushpin410">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d47faa55</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Aleutian East Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Aleutian East</name>
+					<styleUrl>#sn_info-i35</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-167,52.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Aleutian East</name>
+				<styleUrl>#msn_ylw-pushpin210</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-151.4079702938261,53.9438894040282,0 -155.9421945656192,57.77469185937104,0 -179.6680249242381,51.26101859248802,0 -179.9153844718539,48.15995935731773,0 -151.4079702938261,53.9438894040282,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Aleutian West</name>
+			<Style id="sh_ylw-pushpin22">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d47faaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i36">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin22">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin42</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin22</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_ylw-pushpin42">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d47faaff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Aleutian West Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Aleutian West</name>
+					<styleUrl>#sn_info-i36</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>169,52.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Aleutian West</name>
+				<styleUrl>#msn_ylw-pushpin22</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								179.6821916601121,48.1006192342785,0 179.9763731332635,51.38907362524281,0 162.7701957029012,56.46057405463306,0 159.3196936141636,53.68038872330154,0 179.6821916601121,48.1006192342785,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Bearing Sea West Basin</name>
+			<Style id="sn_ylw-pushpin43">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d400ffff</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin23">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin43</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin23</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin23">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d400ffff</color>
+				</PolyStyle>
+			</Style>
+			<Placemark>
+				<name>Bearing Sea West Basin</name>
+				<styleUrl>#msn_ylw-pushpin23</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								162.7600269219582,56.46172789734797,0 179.9825316965912,51.38649363646796,0 179.9208906244664,60.44991168801913,0 176.5790131267397,61.91316004617424,0 175.3341264854729,60.90822375997428,0 171.0101111769985,59.27005237484358,0 169.7663049831202,59.39610863927014,0 168.962827812021,59.94579180435994,0 167.3321628032401,59.49522272575072,0 166.1743431758563,59.05731409061782,0 162.7600269219582,56.46172789734797,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Bearing Sea West Shelf</name>
+			<StyleMap id="msn_ylw-pushpin25">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin45</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin25</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin25">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8c00ffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin45">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8c00ffff</color>
+				</PolyStyle>
+			</Style>
+			<Placemark>
+				<name>Bearing Sea West Shelf</name>
+				<styleUrl>#msn_ylw-pushpin25</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								169.7802553116226,59.39451069778997,0 171.0181750215943,59.2720221369793,0 175.3089193592293,60.8934379245569,0 176.57773165196,61.9126971621259,0 179.9586284179998,60.43276920680409,0 179.8549997002648,66.13437556465642,0 162.2078648180178,59.53323237745115,0 161.8388620337098,57.78998553282643,0 162.7686541332524,56.47304642334846,0 166.1747607203235,59.06178793930041,0 167.3889279058652,59.51192590596958,0 168.9777029169893,59.93810280849373,0 169.7802553116226,59.39451069778997,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Bearing Sea East Shelf</name>
+			<StyleMap id="msn_ylw-pushpin26">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin46</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin26</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i37">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin26">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8c00ffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin46">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>8c00ffff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Bearing Sea Shelf</name>
+				<open>1</open>
+				<Placemark>
+					<name>Bearing Sea Shelf</name>
+					<styleUrl>#sn_info-i37</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>179,63.20000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Bearing Sea East Shelf</name>
+				<styleUrl>#msn_ylw-pushpin26</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-179.9832239481281,66.43396914444084,0 -179.8206488129977,59.96575270323908,0 -178.1888540179616,58.44499448871193,0 -175.0251860475038,57.79005903355971,0 -173.9097502158174,56.39382607632621,0 -170.727765266582,55.63777820798654,0 -170.907466265745,53.66636934305887,0 -155.908070380666,57.76937849455266,0 -159.2839362535646,61.17238528080235,0 -160.7224399105204,65.50759242443468,0 -179.9832239481281,66.43396914444084,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Bearing Sea East Basin</name>
+			<StyleMap id="msn_ylw-pushpin27">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin47</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin27</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i38">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin47">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d400ffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin27">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d400ffff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Bearing Sea Basin</name>
+				<open>1</open>
+				<Placemark>
+					<name>Bearing Sea Basin</name>
+					<styleUrl>#sn_info-i38</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>177,55.4,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Bearing Sea East Basin</name>
+				<styleUrl>#msn_ylw-pushpin27</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-179.7883368957814,59.83338385062761,0 -179.9063879238101,51.19311935921967,0 -170.907466265745,53.66636934305887,0 -170.7310256035863,55.63420771416325,0 -173.8957342114181,56.39547701233752,0 -175.0129601341214,57.79182412587591,0 -178.1888540179616,58.44499448871193,0 -179.7883368957814,59.83338385062761,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Hudson Bay.kmz</name>
+			<StyleMap id="msn_ylw-pushpin28">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin48</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin28</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i39">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin28">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>a67fffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin48">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>a67fffff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Hudson Bay Info</name>
+				<Placemark>
+					<name>Hudson Bay</name>
+					<styleUrl>#sn_info-i39</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-86,59.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Hudson Bay</name>
+				<styleUrl>#msn_ylw-pushpin28</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-85.03184094949226,66.9247028958995,0 -99.4763818983256,59.24323825570766,0 -78.28795475224862,50.33294699703627,0 -74.66658663958872,61.47148570878301,0 -85.03184094949226,66.9247028958995,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Hudson Strait</name>
+			<StyleMap id="msn_ylw-pushpin31">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin50</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin31</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin31">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>a600aaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin50">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>a600aaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_info-i40">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Folder>
+				<name>Hudson Strait Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Hudson Strait</name>
+					<styleUrl>#sn_info-i40</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-74,64.90000000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Hudson Strait</name>
+				<styleUrl>#msn_ylw-pushpin31</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-85.03184094949226,66.9247028958995,0 -74.66658663958872,61.47148570878301,0 -66.27043119539245,56.96133038414126,0 -64.65545982404289,60.31169963084103,0 -64.36738586927655,62.52801153053821,0 -70.81078842041876,67.2770807950711,0 -83.17791414456876,73.56577821502492,0 -85.03184094949226,66.9247028958995,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+	</Folder>
+	<Folder>
+		<name>WestCoastRegions</name>
+		<Folder>
+			<name>Inlets VI</name>
+			<Placemark>
+				<name>Inlets VI</name>
+				<styleUrl>#msn_ylw-pushpin15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-127.3102271136497,50.02394353436407,0 -126.6163244819138,49.57920262975206,0 -125.8714556198761,49.12427461544565,0 -125.2898619735307,48.86158166717922,0 -125.0962299468348,48.77647134422291,0 -124.5208583407857,48.57395694469913,0 -124.4021324129744,48.57419880075997,0 -124.3318499101289,48.51163634815502,0 -123.8144348389794,48.36575648970867,0 -123.6324744910209,48.3887554534967,0 -123.5779855559746,48.33418859781597,0 -123.4408378750185,48.45144630400105,0 -123.6371245733452,48.51265054153104,0 -123.6313766341625,48.69568018621586,0 -123.9850872860623,49.10383093159449,0 -124.842331640779,49.46670984415901,0 -125.0011992680071,49.68075943385091,0 -125.0052960455511,49.76837850089102,0 -125.2309149651842,49.91436698151088,0 -125.3871829955813,50.10559033474,0 -125.4790326850973,50.3128496814863,0 -125.875206040485,50.35742030993676,0 -126.9028848277372,50.50794181551751,0 -128.1105139403458,50.84698341033747,0 -128.4227236937617,50.74144892745414,0 -127.3102271136497,50.02394353436407,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name> Inlets VI</name>
+				<styleUrl>#sn_info-i0</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#JuanDeFuca_Region_Coarse_schema">
+						<SimpleData name="FID">0</SimpleData>
+						<SimpleData name="FID_1">0</SimpleData>
+						<SimpleData name="Id">0</SimpleData>
+						<SimpleData name="ET_ID">0</SimpleData>
+						<SimpleData name="FID_2">0</SimpleData>
+						<SimpleData name="Id_1">0</SimpleData>
+						<SimpleData name="ET_ID_1">0</SimpleData>
+						<SimpleData name="ET_X">-124.01809</SimpleData>
+						<SimpleData name="ET_Y">48.30708</SimpleData>
+						<SimpleData name="Distance">0</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-125.92907,49.8768,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>BC Inlets</name>
+			<Placemark>
+				<name>BC Inlets</name>
+				<styleUrl>#msn_ylw-pushpin14</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-122.7485812843484,49.01069187959159,0 -122.7472058780467,49.00102774300508,0 -114.0286123670005,48.99376142919655,0 -126.0543902422838,60.13831578155602,0 -136.1051042853072,59.99595493605277,0 -130.9172499126431,56.26624742734766,0 -130.1970991124656,54.80138980252064,0 -130.5084752041046,54.66627333533183,0 -130.2036734479992,54.11573921582377,0 -129.9406459853024,53.54029779104722,0 -128.3099813439822,52.05996228743255,0 -128.0922516973519,51.58094508989158,0 -127.8497768568217,51.64792139501765,0 -127.5337975817744,51.04334586057365,0 -127.1849539391517,50.87055713329679,0 -127.0130629532401,50.82770067367157,0 -126.905214491552,50.92437449317264,0 -126.6520076031657,50.88582214184697,0 -126.5526815358035,51.08465770873156,0 -125.5591141910421,51.13249497293506,0 -125.4271946332915,50.75921673994878,0 -125.1390223393406,50.5460306159308,0 -124.9307523809982,51.02562610758755,0 -124.7644190159622,50.92141485496138,0 -124.8152458664598,50.41890661521748,0 -124.3081175299418,50.52170057145617,0 -124.6603394240935,49.96946581195598,0 -124.2641280002959,49.75030548032258,0 -124.003593594752,50.2008786430222,0 -123.75880658507,50.20906059615808,0 -123.7379360364182,50.07587693242582,0 -123.8247403278006,49.90893013574637,0 -123.5048810740071,49.69118583306091,0 -123.7360271376433,49.48090417251655,0 -123.529280091503,49.38061802051793,0 -123.497940532215,49.51451462210346,0 -123.1227022138303,49.75594240838271,0 -123.2616185937526,49.33439347726426,0 -123.242862190997,49.34473931358018,0 -122.962911801631,49.30927943829565,0 -122.8897797339512,49.48581423882271,0 -122.8459745729793,49.43889855682002,0 -122.8392231056016,49.27530431103047,0 -123.2595786438072,49.26496563252486,0 -123.0947488806628,49.01037223686647,0 -122.8903672124201,49.05770939188572,0 -122.7485812843484,49.01069187959159,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>BC Inlets</name>
+				<styleUrl>#sn_info-i05</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#JuanDeFuca_Region_Coarse_schema">
+						<SimpleData name="FID">0</SimpleData>
+						<SimpleData name="FID_1">0</SimpleData>
+						<SimpleData name="Id">0</SimpleData>
+						<SimpleData name="ET_ID">0</SimpleData>
+						<SimpleData name="FID_2">0</SimpleData>
+						<SimpleData name="Id_1">0</SimpleData>
+						<SimpleData name="ET_ID_1">0</SimpleData>
+						<SimpleData name="ET_X">-124.01809</SimpleData>
+						<SimpleData name="ET_Y">48.30708</SimpleData>
+						<SimpleData name="Distance">0</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-124.92907,53.28768,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Queen_Charlotte_Strait_Coarse</name>
+			<Folder>
+				<name>Queen_Charlotte_Strait_Coarse_Info</name>
+				<Placemark>
+					<name>Queen Charlotte Strait</name>
+					<styleUrl>#sn_info-i7</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="#Queen_Charlotte_Strait_Coarse_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-127.43943,50.83449,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Queen Charlotte Strait</name>
+				<styleUrl>#msn_shaded_dot</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-128.1105847461079,50.84912809298162,0 -126.8992083860289,50.50706881417509,0 -126.7448148916783,50.61021494457254,0 -126.7139827526368,50.70267208614742,0 -127.0141231983088,50.82766439842676,0 -127.1851925316607,50.87098500487205,0 -127.5354919163633,51.0438028236114,0 -128.1105847461079,50.84912809298162,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Hecate_Strait_Region</name>
+			<open>1</open>
+			<Folder>
+				<name>Hecate_Strait_Region_Info</name>
+				<Placemark>
+					<name>Hecate Strait</name>
+					<styleUrl>#sn_info-i9</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-129.833,52.72823,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Hecate Strait</name>
+				<styleUrl>#sn_ylw-pushpin0000</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-128.0916093756099,51.57440192804774,0 -128.3078583573187,52.05854018205789,0 -129.9406518556316,53.54030247622583,0 -130.1996015436977,54.10824781719594,0 -130.5085436292898,54.66636486507239,0 -131.65698,54.17802,0 -132.42086,53.16973,0 -129.90242,51.02494999999999,0 -128.0916093756099,51.57440192804774,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>SVI_Basin_Region</name>
+			<Folder>
+				<name>SVI_Basin_Region_Info</name>
+				<Placemark>
+					<name>Southern Vancouver Island Offshore</name>
+					<styleUrl>#sn_info-i8</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="#SVI_Basin_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-128.05947,47.58082000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Southern Vancouver Island Offshore</name>
+				<styleUrl>#sn_ylw-pushpin401</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-126.14008,47.49878,0 -126.26346,47.61939,0 -126.35037,47.76165999999999,0 -126.3594,47.87913,0 -126.28333,48.14126,0 -126.2986,48.22706000000001,0 -126.37518,48.27573,0 -126.67398,48.32232999999999,0 -126.77802,48.36411,0 -126.88208,48.48878,0 -127.00482,48.83438,0 -127.09152,48.95919,0 -127.20049,49.01943,0 -127.49761,49.06086000000001,0 -127.59007,49.10143999999999,0 -130.15232,47.70985000000001,0 -128.54567,46.90449,0 -128.07208,46.56708,0 -126.14008,47.49878,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>SVI_Shelf_Slope_Region</name>
+			<open>1</open>
+			<Folder>
+				<name>SVI_Shelf_Slope_Region_Info</name>
+				<Placemark>
+					<name>Southern Vancouver Island Shelf(Stations B and D)</name>
+					<styleUrl>#sn_info-i13</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Documents and Settings/faustd/My Documents/all.kml#SVI_Shelf_Slope_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-125.68771,48.99630000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Southern Vancouver Island Shelf (Stations B and D)</name>
+				<styleUrl>#SVI_Shelf_Slope_Region1</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-124.63341,48.16442000000001,0 -124.5227017332815,48.57535151450416,0 -125.101322977034,48.78013695236447,0 -125.8382151004157,49.10743907421087,0 -126.5587122228002,49.54052321626495,0 -126.6170325830006,49.57973501408163,0 -127.59037,49.10084,0 -127.49761,49.06069000000001,0 -127.19987,49.01897999999999,0 -127.0907,48.95838,0 -127.00369,48.83170000000001,0 -126.88153,48.49059,0 -126.77784,48.36435,0 -126.67472,48.32260999999999,0 -126.37519,48.27505,0 -126.29782,48.22675999999999,0 -126.28271,48.14291999999999,0 -126.3587,47.87565000000001,0 -126.35046,47.76181,0 -126.26359,47.61934000000001,0 -126.14038,47.49893,0 -124.63341,48.16442000000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>NVI_Shelf_Slope_Region</name>
+			<open>1</open>
+			<Folder>
+				<name>NVI_Shelf_Slope_Region_Info</name>
+				<Placemark>
+					<name>Northern Vancouver Island Shelf</name>
+					<styleUrl>#sn_info-i14</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="#NVI_Shelf_Slope_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-128.91112,50.74064,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Northern Vancouver Island Shelf</name>
+				<styleUrl>#sn_ylw-pushpin13</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-126.6163818755666,49.58005914212999,0 -128.4234213930522,50.74016923153994,0 -127.5208635391128,51.05071760947628,0 -127.8606636737965,51.65018046734062,0 -129.90311,51.02483999999999,0 -129.89162,51.01802,0 -129.77101,50.87686,0 -129.78023,50.67711,0 -129.71513,50.60114000000001,0 -129.60298,50.56668000000001,0 -129.60447,50.50503,0 -129.67588,50.43404,0 -129.61346,50.32298,0 -129.43,50.17799,0 -129.18571,50.05166999999999,0 -129.10411,50.02984,0 -128.913,49.97763,0 -128.83856,49.94666,0 -128.72755,49.92676,0 -128.14452,49.92244000000001,0 -128.04056,49.90668,0 -127.97528,49.87452,0 -127.94453,49.80601,0 -127.99623,49.62456,0 -127.98958,49.55654,0 -127.93137,49.50517000000001,0 -127.71296,49.42562,0 -127.64198,49.38005,0 -127.61692,49.31452,0 -127.61639,49.15131999999999,0 -127.5907,49.10092,0 -126.6163818755666,49.58005914212999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>NVI_Basin_Region</name>
+			<open>1</open>
+			<Folder>
+				<name>NVI_Basin_Region_Info</name>
+				<open>1</open>
+			</Folder>
+			<Placemark>
+				<name>Northern Vancouver Island Offshore</name>
+				<styleUrl>#sn_ylw-pushpin16</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-127.59051,49.10095,0 -127.61565,49.15189,0 -127.61659,49.31533999999999,0 -127.64196,49.38027,0 -127.71282,49.42533,0 -127.93145,49.50555,0 -127.98902,49.55535,0 -127.99489,49.62403000000001,0 -127.94477,49.80613,0 -127.9756,49.87456,0 -128.03983,49.90634,0 -128.14621,49.92269999999999,0 -128.72835,49.92673,0 -128.83622,49.94609,0 -128.91283,49.97805,0 -129.18504,50.0515,0 -129.43112,50.17874,0 -129.61326,50.32263,0 -129.67577,50.43383,0 -129.60461,50.50540999999999,0 -129.60336,50.56663,0 -129.71534,50.60150999999999,0 -129.78003,50.67686999999999,0 -129.7715,50.87673,0 -129.89216,51.01786000000001,0 -129.90301,51.02500000000001,0 -132.53035,50.87798,0 -134.06837,49.97809,0 -133.89865,49.8595,0 -132.35683,48.92292,0 -130.46042,47.85954,0 -130.15228,47.70989,0 -127.59051,49.10095,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>XYPoint_Region_C_Buffer1</name>
+			<Folder>
+				<name>XYPoint_Region_C_Buffer1_Info</name>
+				<Placemark>
+					<name>Southern Vancouver Island Shelf(Station C)</name>
+					<styleUrl>#sn_info-i4</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="#XYPoint_Region_C_Buffer1_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Lat">48.4019</SimpleData>
+							<SimpleData name="lon">-125.2502</SimpleData>
+							<SimpleData name="rad">0.02</SimpleData>
+							<SimpleData name="BUFF_DIST">20</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-125.2502,48.36593000000001,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Southern Vancouver Island Shelf (Station C)</name>
+				<styleUrl>#sn_ylw-pushpin81</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-125.2483,48.22204,0 -125.2445,48.22208,0 -125.2407,48.22215,0 -125.2369,48.22225999999999,0 -125.23311,48.2224,0 -125.22932,48.22258,0 -125.22553,48.22279,0 -125.22175,48.22303999999999,0 -125.21797,48.22333,0 -125.2142,48.22364999999999,0 -125.21044,48.224,0 -125.20668,48.2244,0 -125.20294,48.22482,0 -125.1992,48.22528,0 -125.19547,48.22578,0 -125.19176,48.22631,0 -125.18805,48.22688,0 -125.18436,48.22748000000001,0 -125.18068,48.22812,0 -125.17701,48.22879,0 -125.17336,48.22949,0 -125.16973,48.23023000000001,0 -125.16611,48.23101000000001,0 -125.1625,48.23181999999999,0 -125.15892,48.23266,0 -125.15535,48.23353,0 -125.1518,48.23444,0 -125.14827,48.23538,0 -125.14476,48.23636,0 -125.14127,48.23736,0 -125.1378,48.23841,0 -125.13435,48.23948,0 -125.13093,48.24058,0 -125.12753,48.24172,0 -125.12416,48.24289,0 -125.12081,48.24409,0 -125.11748,48.24532000000001,0 -125.11418,48.24659,0 -125.11091,48.24788,0 -125.10767,48.24921,0 -125.10445,48.25056,0 -125.10127,48.25195,0 -125.09811,48.25336,0 -125.09498,48.25481,0 -125.09188,48.25628,0 -125.08882,48.25778,0 -125.08579,48.25931,0 -125.08278,48.26087,0 -125.07982,48.26246,0 -125.07688,48.26408000000001,0 -125.07398,48.26572,0 -125.07112,48.26738999999999,0 -125.06829,48.26909,0 -125.06549,48.27080999999999,0 -125.06274,48.27255999999999,0 -125.06002,48.27434,0 -125.05733,48.27614000000001,0 -125.05469,48.27796,0 -125.05208,48.27981000000001,0 -125.04952,48.28169,0 -125.04699,48.28359,0 -125.0445,48.28551,0 -125.04206,48.28746,0 -125.03965,48.28942,0 -125.03729,48.29141,0 -125.03497,48.29343,0 -125.03269,48.29545999999999,0 -125.03046,48.29752,0 -125.02827,48.29959000000001,0 -125.02612,48.30169,0 -125.02401,48.30381,0 -125.02196,48.30594,0 -125.01994,48.3081,0 -125.01798,48.31027,0 -125.01605,48.31246999999999,0 -125.01418,48.31468000000001,0 -125.01235,48.3169,0 -125.01057,48.31915,0 -125.00884,48.32141000000001,0 -125.00715,48.32369000000001,0 -125.00552,48.32598,0 -125.00393,48.32829,0 -125.00239,48.33061000000001,0 -125.0009,48.33294999999999,0 -124.99946,48.3353,0 -124.99806,48.33766,0 -124.99672,48.34004,0 -124.99543,48.34243,0 -124.99419,48.34483,0 -124.993,48.34724,0 -124.99186,48.34967000000001,0 -124.99078,48.3521,0 -124.98974,48.35453999999999,0 -124.98876,48.357,0 -124.98783,48.35945999999999,0 -124.98695,48.36192999999999,0 -124.98612,48.36441,0 -124.98535,48.36690000000001,0 -124.98462,48.36939,0 -124.98395,48.37189,0 -124.98334,48.3744,0 -124.98278,48.37691,0 -124.98227,48.37942,0 -124.98181,48.38193999999999,0 -124.98141,48.38446999999999,0 -124.98106,48.38699999999999,0 -124.98076,48.38953,0 -124.98052,48.39207,0 -124.98033,48.3946,0 -124.9802,48.39714000000001,0 -124.98012,48.39968,0 -124.98009,48.40222,0 -124.98012,48.40476,0 -124.9802,48.4073,0 -124.98033,48.40983,0 -124.98052,48.41237,0 -124.98076,48.4149,0 -124.98106,48.41744,0 -124.98141,48.41997,0 -124.98181,48.42249,0 -124.98227,48.42501,0 -124.98278,48.42753,0 -124.98334,48.43004,0 -124.98396,48.43254999999999,0 -124.98463,48.43505,0 -124.98535,48.43754,0 -124.98613,48.44003,0 -124.98696,48.44251,0 -124.98784,48.44498,0 -124.98877,48.44744000000001,0 -124.98976,48.44989,0 -124.9908,48.45234,0 -124.99189,48.45477000000001,0 -124.99303,48.45719,0 -124.99422,48.4596,0 -124.99547,48.46201,0 -124.99676,48.46439000000001,0 -124.99811,48.46677,0 -124.99951,48.46913,0 -125.00095,48.47148000000001,0 -125.00245,48.47382,0 -125.004,48.47614,0 -125.00559,48.47845000000001,0 -125.00724,48.48073999999999,0 -125.00893,48.48302,0 -125.01067,48.48528,0 -125.01246,48.48752,0 -125.0143,48.48975,0 -125.01618,48.49196000000001,0 -125.01811,48.49415,0 -125.02009,48.49632,0 -125.02212,48.49848,0 -125.02419,48.50061,0 -125.0263,48.50272,0 -125.02846,48.50482,0 -125.03066,48.50688999999999,0 -125.03291,48.50895,0 -125.03521,48.51098,0 -125.03754,48.51299,0 -125.03992,48.51498,0 -125.04234,48.51694,0 -125.0448,48.51889000000001,0 -125.0473,48.52081,0 -125.04985,48.52269999999999,0 -125.05243,48.52457,0 -125.05505,48.52642,0 -125.05772,48.52824,0 -125.06042,48.53004,0 -125.06316,48.53181000000001,0 -125.06594,48.53356000000001,0 -125.06875,48.53528,0 -125.0716,48.53697,0 -125.07449,48.53863,0 -125.07741,48.54027,0 -125.08037,48.54188,0 -125.08336,48.54347,0 -125.08638,48.54502,0 -125.08944,48.54655,0 -125.09253,48.54804000000001,0 -125.09565,48.54951,0 -125.0988,48.55095,0 -125.10198,48.55236,0 -125.1052,48.55373,0 -125.10844,48.55507999999999,0 -125.11171,48.5564,0 -125.11501,48.55769,0 -125.11833,48.55893999999999,0 -125.12168,48.56017,0 -125.12506,48.56136,0 -125.12846,48.56252000000001,0 -125.13189,48.56365,0 -125.13534,48.56474,0 -125.13882,48.56581,0 -125.14231,48.56684,0 -125.14583,48.56784,0 -125.14937,48.5688,0 -125.15293,48.56973,0 -125.15651,48.57063,0 -125.16011,48.57149,0 -125.16373,48.57232,0 -125.16736,48.57312,0 -125.17101,48.57388,0 -125.17468,48.57461000000001,0 -125.17836,48.5753,0 -125.18206,48.57596,0 -125.18576,48.57658000000001,0 -125.18949,48.57717,0 -125.19322,48.57772000000001,0 -125.19697,48.57824,0 -125.20073,48.57872,0 -125.20449,48.57917000000001,0 -125.20827,48.57958,0 -125.21206,48.57996,0 -125.21585,48.5803,0 -125.21965,48.58061000000001,0 -125.22345,48.58088,0 -125.22726,48.58111000000001,0 -125.23108,48.58131,0 -125.2349,48.58147000000001,0 -125.23872,48.58158999999999,0 -125.24255,48.58168,0 -125.24637,48.58174,0 -125.2502,48.58176,0 -125.25403,48.58174,0 -125.25785,48.58168,0 -125.26168,48.58158999999999,0 -125.2655,48.58147000000001,0 -125.26932,48.58131,0 -125.27314,48.58111000000001,0 -125.27695,48.58088,0 -125.28075,48.58061000000001,0 -125.28455,48.5803,0 -125.28834,48.57996,0 -125.29213,48.57958,0 -125.29591,48.57917000000001,0 -125.29967,48.57872,0 -125.30343,48.57824,0 -125.30718,48.57772000000001,0 -125.31091,48.57717,0 -125.31464,48.57658000000001,0 -125.31834,48.57596,0 -125.32204,48.5753,0 -125.32572,48.57461000000001,0 -125.32939,48.57388,0 -125.33304,48.57312,0 -125.33667,48.57232,0 -125.34029,48.57149,0 -125.34389,48.57063,0 -125.34747,48.56973,0 -125.35103,48.5688,0 -125.35457,48.56784,0 -125.35809,48.56684,0 -125.36158,48.56581,0 -125.36506,48.56474,0 -125.36851,48.56365,0 -125.37194,48.56252000000001,0 -125.37534,48.56136,0 -125.37872,48.56017,0 -125.38207,48.55893999999999,0 -125.38539,48.55769,0 -125.38869,48.5564,0 -125.39196,48.55507999999999,0 -125.3952,48.55373,0 -125.39842,48.55236,0 -125.4016,48.55095,0 -125.40475,48.54951,0 -125.40787,48.54804000000001,0 -125.41096,48.54655,0 -125.41402,48.54502,0 -125.41704,48.54347,0 -125.42003,48.54188,0 -125.42299,48.54027,0 -125.42591,48.53863,0 -125.4288,48.53697,0 -125.43165,48.53528,0 -125.43446,48.53356000000001,0 -125.43724,48.53181000000001,0 -125.43998,48.53004,0 -125.44268,48.52824,0 -125.44535,48.52642,0 -125.44797,48.52457,0 -125.45055,48.52269999999999,0 -125.4531,48.52081,0 -125.4556,48.51889000000001,0 -125.45806,48.51694,0 -125.46048,48.51498,0 -125.46286,48.51299,0 -125.46519,48.51098,0 -125.46749,48.50895,0 -125.46974,48.50688999999999,0 -125.47194,48.50482,0 -125.4741,48.50272,0 -125.47621,48.50061,0 -125.47828,48.49848,0 -125.48031,48.49632,0 -125.48229,48.49415,0 -125.48422,48.49196000000001,0 -125.4861,48.48975,0 -125.48794,48.48752,0 -125.48973,48.48528,0 -125.49147,48.48302,0 -125.49316,48.48073999999999,0 -125.49481,48.47845000000001,0 -125.4964,48.47614,0 -125.49795,48.47382,0 -125.49945,48.47148000000001,0 -125.50089,48.46913,0 -125.50229,48.46677,0 -125.50364,48.46439000000001,0 -125.50493,48.46201,0 -125.50618,48.4596,0 -125.50737,48.45719,0 -125.50851,48.45477000000001,0 -125.5096,48.45234,0 -125.51064,48.44989,0 -125.51163,48.44744000000001,0 -125.51256,48.44498,0 -125.51344,48.44251,0 -125.51427,48.44003,0 -125.51505,48.43754,0 -125.51577,48.43505,0 -125.51644,48.43254999999999,0 -125.51706,48.43004,0 -125.51762,48.42753,0 -125.51813,48.42501,0 -125.51859,48.42249,0 -125.51899,48.41997,0 -125.51934,48.41744,0 -125.51964,48.4149,0 -125.51988,48.41237,0 -125.52007,48.40983,0 -125.5202,48.4073,0 -125.52028,48.40476,0 -125.52031,48.40222,0 -125.52028,48.39968,0 -125.5202,48.39714000000001,0 -125.52007,48.3946,0 -125.51988,48.39207,0 -125.51964,48.38953,0 -125.51934,48.38699999999999,0 -125.51899,48.38446999999999,0 -125.51859,48.38193999999999,0 -125.51813,48.37942,0 -125.51762,48.37691,0 -125.51706,48.3744,0 -125.51645,48.37189,0 -125.51578,48.36939,0 -125.51505,48.36690000000001,0 -125.51428,48.36441,0 -125.51345,48.36192999999999,0 -125.51257,48.35945999999999,0 -125.51164,48.357,0 -125.51066,48.35453999999999,0 -125.50962,48.3521,0 -125.50854,48.34967000000001,0 -125.5074,48.34724,0 -125.50621,48.34483,0 -125.50497,48.34243,0 -125.50368,48.34004,0 -125.50234,48.33766,0 -125.50094,48.3353,0 -125.4995,48.33294999999999,0 -125.49801,48.33061000000001,0 -125.49647,48.32829,0 -125.49488,48.32598,0 -125.49325,48.32369000000001,0 -125.49156,48.32141000000001,0 -125.48983,48.31915,0 -125.48805,48.3169,0 -125.48622,48.31468000000001,0 -125.48435,48.31246999999999,0 -125.48242,48.31027,0 -125.48046,48.3081,0 -125.47844,48.30594,0 -125.47639,48.30381,0 -125.47428,48.30169,0 -125.47213,48.29959000000001,0 -125.46994,48.29752,0 -125.46771,48.29545999999999,0 -125.46543,48.29343,0 -125.46311,48.29141,0 -125.46075,48.28942,0 -125.45834,48.28746,0 -125.4559,48.28551,0 -125.45341,48.28359,0 -125.45088,48.28169,0 -125.44832,48.27981000000001,0 -125.44571,48.27796,0 -125.44307,48.27614000000001,0 -125.44038,48.27434,0 -125.43766,48.27255999999999,0 -125.43491,48.27080999999999,0 -125.43211,48.26909,0 -125.42928,48.26738999999999,0 -125.42642,48.26572,0 -125.42352,48.26408000000001,0 -125.42058,48.26246,0 -125.41762,48.26087,0 -125.41461,48.25931,0 -125.41158,48.25778,0 -125.40852,48.25628,0 -125.40542,48.25481,0 -125.40229,48.25336,0 -125.39913,48.25195,0 -125.39595,48.25056,0 -125.39273,48.24921,0 -125.38949,48.24788,0 -125.38622,48.24659,0 -125.38292,48.24532000000001,0 -125.37959,48.24409,0 -125.37624,48.24289,0 -125.37287,48.24172,0 -125.36947,48.24058,0 -125.36605,48.23948,0 -125.3626,48.23841,0 -125.35913,48.23736,0 -125.35564,48.23636,0 -125.35213,48.23538,0 -125.3486,48.23444,0 -125.34505,48.23353,0 -125.34148,48.23266,0 -125.3379,48.23181999999999,0 -125.33429,48.23101000000001,0 -125.33067,48.23023000000001,0 -125.32704,48.22949,0 -125.32339,48.22879,0 -125.31972,48.22812,0 -125.31604,48.22748000000001,0 -125.31235,48.22688,0 -125.30864,48.22631,0 -125.30493,48.22578,0 -125.3012,48.22528,0 -125.29746,48.22482,0 -125.29372,48.2244,0 -125.28996,48.224,0 -125.2862,48.22364999999999,0 -125.28243,48.22333,0 -125.27865,48.22303999999999,0 -125.27487,48.22279,0 -125.27108,48.22258,0 -125.26729,48.2224,0 -125.2635,48.22225999999999,0 -125.2597,48.22215,0 -125.2559,48.22208,0 -125.2521,48.22204,0 -125.2483,48.22204,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Document>
+			<name>Washington/Oregon Shelf</name>
+			<StyleMap id="msn_ylw-pushpin32">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin211</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin40</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i19">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin40">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>7300aaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin211">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>7300aaff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Washington/Oregon Shelf Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Washington/Oregon Shelf</name>
+					<styleUrl>#sn_info-i19</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-127,44.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Washington/Oregon Shelf</name>
+				<styleUrl>#msn_ylw-pushpin32</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-126.1434140836836,47.49672375127038,0 -125.9500351431351,47.12505648883175,0 -125.6490668783802,46.4135860632159,0 -125.1857052789073,46.07822752403642,0 -125.4460217020374,45.5492592924335,0 -125.3808344046312,45.14897405648753,0 -125.2553635473568,44.53318144600472,0 -125.162508795717,44.24525686547005,0 -125.3783690115252,43.54490913075236,0 -125.1291379703545,42.69186409556632,0 -125.0468549508837,42.38466216929984,0 -125.2353099401946,42.00529904431901,0 -124.0340963297307,41.97147046799469,0 -123.3309524247416,46.66328725070781,0 -124.6171276539705,48.1868754758494,0 -126.1434140836836,47.49672375127038,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Washington/Oregon Basin</name>
+			<StyleMap id="msn_ylw-pushpin51">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin24</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin51</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sn_info-i201">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<Style id="sh_ylw-pushpin51">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>a600aaff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin24">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>a600aaff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Washington/Oregon Basin Info</name>
+				<open>1</open>
+				<Placemark>
+					<name>Washington/Oregon Basin</name>
+					<styleUrl>#sn_info-i201</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-127,44.9,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Washington/Oregon Basin</name>
+				<styleUrl>#msn_ylw-pushpin51</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-126.1434140836836,47.49672375127038,0 -128.0720422382593,46.56814560605368,0 -128.4094829009416,41.97630928467551,0 -125.2353099401946,42.00529904431901,0 -125.0468549508837,42.38466216929984,0 -125.1291379703545,42.69186409556632,0 -125.3783690115252,43.54490913075236,0 -125.162508795717,44.24525686547005,0 -125.2553635473568,44.53318144600472,0 -125.3808344046312,45.14897405648753,0 -125.4460217020374,45.5492592924335,0 -125.1857052789073,46.07822752403642,0 -125.6490668783802,46.4135860632159,0 -125.9500351431351,47.12505648883175,0 -126.1434140836836,47.49672375127038,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+		<Document>
+			<name>Haida Basin</name>
+			<Style id="sn_info-i30">
+				<IconStyle>
+					<color>bfffffff</color>
+					<scale>0</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/info-i.png</href>
+					</Icon>
+				</IconStyle>
+				<LabelStyle>
+					<scale>0.8</scale>
+				</LabelStyle>
+			</Style>
+			<StyleMap id="msn_ylw-pushpin120">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_ylw-pushpin31</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_ylw-pushpin120</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Style id="sh_ylw-pushpin120">
+				<IconStyle>
+					<scale>1.3</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d4ffffff</color>
+				</PolyStyle>
+			</Style>
+			<Style id="sn_ylw-pushpin31">
+				<IconStyle>
+					<scale>1.1</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+					<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+				</IconStyle>
+				<PolyStyle>
+					<color>d4ffffff</color>
+				</PolyStyle>
+			</Style>
+			<Folder>
+				<name>Haida Basin Info</name>
+				<Placemark>
+					<name>Haida Basin</name>
+					<styleUrl>#sn_info-i30</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="C:/Inetpub/wwwroot/kml/regions.kml#Hecate_Strait_Region_schema">
+							<SimpleData name="FID">0</SimpleData>
+							<SimpleData name="Id">0</SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates>-133,51.99999999999999,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Placemark>
+				<name>Haida Basin</name>
+				<styleUrl>#msn_ylw-pushpin120</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-133.1095868727564,53.82229036687189,0 -134.0450193282355,53.87398446339748,0 -136.5978208687023,53.08615032544659,0 -132.5391896762309,50.88057601693604,0 -129.8966427138017,51.02314976495675,0 -133.1095868727564,53.82229036687189,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Document>
+	</Folder>
+</Document>
+</kml>
